@@ -40,11 +40,11 @@
 template <class T>
 inline int toInt ( const T& t )
 {
-  int out;
-  std::stringstream ss;
-  ss << t;
-  ss >> out;
-  return out;
+    int out;
+    std::stringstream ss;
+    ss << t;
+    ss >> out;
+    return out;
 }
 
 /**
@@ -62,10 +62,10 @@ inline int toInt ( const T& t )
 template <class T>
 inline const char* toChar ( const T& t )
 {
-  std::stringstream ss;
-  ss << t;
-  std::string str ( ss.str() );
-  return str.c_str();
+    std::stringstream ss;
+    ss << t;
+    std::string str ( ss.str() );
+    return str.c_str();
 }
 
 /**
@@ -82,9 +82,9 @@ inline const char* toChar ( const T& t )
 template <class T>
 inline std::string toString ( const T& t )
 {
-  std::stringstream ss;
-  ss << t;
-  return ss.str( );
+    std::stringstream ss;
+    ss << t;
+    return ss.str( );
 }
 
 #endif
