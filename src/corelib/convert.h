@@ -38,7 +38,7 @@
 * @return An int
 */
 template <class T>
-inline int toInt ( const T& t )
+inline int toInt( const T& t )
 {
     int out;
     std::stringstream ss;
@@ -60,11 +60,11 @@ inline int toInt ( const T& t )
 * @return A char
 */
 template <class T>
-inline const char* toChar ( const T& t )
+inline const char* toChar( const T& t )
 {
     std::stringstream ss;
     ss << t;
-    std::string str ( ss.str() );
+    std::string str( ss.str() );
     return str.c_str();
 }
 
@@ -80,11 +80,11 @@ inline const char* toChar ( const T& t )
 * @return A string
 */
 template <class T>
-inline std::string toString ( const T& t )
+inline std::string toString( const T& t )
 {
     std::stringstream ss;
     ss << t;
-    return ss.str( );
+    return ss.str();
 }
 
 #endif
