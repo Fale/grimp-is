@@ -1,0 +1,50 @@
+-src
+  - lib
+    - contability
+      - account (h and cpp)
+        - add (bool)
+          - type (uint)
+          - name (str)
+          - max (uint)
+          - type (str[virtual,cache,credit,debit])
+        - list
+        - edit
+        - delete
+          - ID (uint)
+      - accounttype (h and cpp)
+        - add (bool)
+          - name (str)
+          - money (str[virtual,cache,credit,debit])
+        - list
+        - edit
+        - delete
+          - ID (uint)
+      - contability (dummy class)
+      - operations (h and cpp)
+        - add (bool)
+          - Account (uint)
+          - Import (double)
+          - User (uint)
+          - To (uint)
+          - Cause (str)
+          - Category (uint)
+        - view
+          - ID (uint)
+        - list
+          - Account (uint)
+          - Since (date)
+          - To (date)
+    - corelib
+      - convertions
+        - toInt
+        - toChar (deprecatamente deprecato, da eliminare)
+        - toString
+    - users
+      - add
+      - edit
+      - login
+      - logout
+      - view
+      - viewList
+    - clients
+    - fornitori (??)
