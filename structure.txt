@@ -2,22 +2,22 @@
   - lib
     - contability
       - account (h and cpp)
+        - type [virtual,cache,credit,debit]
         - add (bool)
-          - type (uint)
           - name (str)
           - max (uint)
-          - type (str[virtual,cache,credit,debit])
-        - list
-        - edit
-        - delete
+          - type (str)
+        - list (vector...)
+        - changeName (bool)
           - ID (uint)
-      - accounttype (h and cpp)
-        - add (bool)
           - name (str)
-          - money (str[virtual,cache,credit,debit])
-        - list
-        - edit
-        - delete
+        - changeMax (bool)
+          - ID (uint)
+          - max (uint)
+        - changeType (bool)
+          - ID (uint)
+          - type (str)
+        - delete (bool)
           - ID (uint)
       - contability (dummy class)
       - operations (h and cpp)
@@ -39,6 +39,11 @@
         - toInt
         - toChar (deprecatamente deprecato, da eliminare)
         - toString
+      - datetime
+        - sinceEpoch (uint)
+        - day (dd/mm/yyyy) (str)
+        - day (yyyy/mm/dd) (str)
+        - time (HH:mm:ss) (str)
     - users
       - add
       - edit
