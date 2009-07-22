@@ -6,7 +6,7 @@
                 - add (bool)
                     - name (str)
                     - max (uint)
-                    - type (str)
+                    - type (type)
                 - list (vector...)
                 - changeName (bool)
                     - ID (uint)
@@ -16,7 +16,7 @@
                     - max (uint)
                 - changeType (bool)
                     - ID (uint)
-                    - type (str)
+                    - type (type)
                 - delete (bool)
                     - ID (uint)
             - contability (dummy class)
@@ -28,22 +28,33 @@
                     - To (uint)
                     - Cause (str)
                     - Category (uint)
-                - view
+                - view (vector...)
                     - ID (uint)
-                - list
+                - list (vector...)
                     - Account (uint)
                     - Since (date)
                     - To (date)
         - corelib
-            - convertions
-                - toInt
-                - toChar (deprecatamente deprecato, da eliminare)
-                - toString
-            - datetime
+            - format [dd/mm/yyyy, yyyy/mm/dd]
+            - convertions (h only)
+                - toInt (inline, int)
+                - toString (inline, str)
+            - datetime (h and cpp)
                 - sinceEpoch (uint)
-                - day (dd/mm/yyyy) (str)
-                - day (yyyy/mm/dd) (str)
-                - time (HH:mm:ss) (str)
+                - day (1~31) (int)
+                - day (1~31) (str)
+                - month (1~12) (int)
+                - month (1~12) (str)
+                - year (4 digit) (int)
+                - year (4 digit) (str)
+                - hour (0~23) (int)
+                - hour (0~23) (str)
+                - minute (0~59) (int)
+                - minute (0~59) (str)
+                - second (0~59) (int)
+                - second (0~59) (str)
+                - dt (int)
+                    - format (format)
         - users
             - add
             - edit
