@@ -1,55 +1,55 @@
 -src
-  - lib
-    - contability
-      - account (h and cpp)
-        - type [virtual,cache,credit,debit]
-        - add (bool)
-          - name (str)
-          - max (uint)
-          - type (str)
-        - list (vector...)
-        - changeName (bool)
-          - ID (uint)
-          - name (str)
-        - changeMax (bool)
-          - ID (uint)
-          - max (uint)
-        - changeType (bool)
-          - ID (uint)
-          - type (str)
-        - delete (bool)
-          - ID (uint)
-      - contability (dummy class)
-      - operations (h and cpp)
-        - add (bool)
-          - Account (uint)
-          - Import (double)
-          - User (uint)
-          - To (uint)
-          - Cause (str)
-          - Category (uint)
-        - view
-          - ID (uint)
-        - list
-          - Account (uint)
-          - Since (date)
-          - To (date)
-    - corelib
-      - convertions
-        - toInt
-        - toChar (deprecatamente deprecato, da eliminare)
-        - toString
-      - datetime
-        - sinceEpoch (uint)
-        - day (dd/mm/yyyy) (str)
-        - day (yyyy/mm/dd) (str)
-        - time (HH:mm:ss) (str)
-    - users
-      - add
-      - edit
-      - login
-      - logout
-      - view
-      - viewList
-    - clients
-    - fornitori (??)
+    - lib
+        - contability
+            - account (h and cpp)
+                - type [virtual,cache,credit,debit]
+                - add (bool)
+                    - name (str)
+                    - max (uint)
+                    - type (str)
+                - list (vector...)
+                - changeName (bool)
+                    - ID (uint)
+                    - name (str)
+                - changeMax (bool)
+                    - ID (uint)
+                    - max (uint)
+                - changeType (bool)
+                    - ID (uint)
+                    - type (str)
+                - delete (bool)
+                    - ID (uint)
+            - contability (dummy class)
+            - operations (h and cpp)
+                - add (bool)
+                    - Account (uint)
+                    - Import (double)
+                    - User (uint)
+                    - To (uint)
+                    - Cause (str)
+                    - Category (uint)
+                - view
+                    - ID (uint)
+                - list
+                    - Account (uint)
+                    - Since (date)
+                    - To (date)
+        - corelib
+            - convertions
+                - toInt
+                - toChar (deprecatamente deprecato, da eliminare)
+                - toString
+            - datetime
+                - sinceEpoch (uint)
+                - day (dd/mm/yyyy) (str)
+                - day (yyyy/mm/dd) (str)
+                - time (HH:mm:ss) (str)
+        - users
+            - add
+            - edit
+            - login
+            - logout
+            - view
+            - viewList
+        - clients
+        - fornitori (??)
