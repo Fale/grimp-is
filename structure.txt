@@ -55,12 +55,24 @@
                 - second (0~59) (str)
                 - dt (int)
                     - format (format)
-        - users
-            - add
+            - password
+                - md5 (str)
+                    - string (str)
+        - user
+            - add (bool)
+                - name (str)
+                - surname (str)
+                - username (str)
+                - email (str)
+                - power (uint)
+                - password (str)
             - edit
-            - login
-            - logout
-            - view
-            - viewList
-        - clients
+                - 
+            - login (bool)
+                - username (str)
+                - password (str)
+            - view (vector...)
+                - ID (uint)
+            - viewList (vector...)
+        - client
         - fornitori (??)
