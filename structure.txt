@@ -74,5 +74,20 @@
             - view (vector...)
                 - ID (uint)
             - viewList (vector...)
+            - remove
         - client
+            - add
+                - name (str)
+                - piva (uint)
+            - view
+            - viewTransactions
+            - viewList
+            - remove
         - fornitori (??)
+            - add
+                - name (str)
+                - piva (uint)
+            - view
+            - viewTransactions
+            - viewList
+            - remove
