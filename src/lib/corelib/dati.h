@@ -15,33 +15,19 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef IS_OPERATIONS_H
-#define IS_OPERATIONS_H
+#ifndef DATI_H
+#define DATI_H
 
 namespace is
 {
-    class operations : public contability
+    namespace corelib
     {
+        class dati
+        {
         public:
-            operations();
-
-            /*Add will require:
-              - Account (uint)
-              - Import (double)
-              - User (uint)
-              - To (uint)
-              - Cause (str)
-              - Category (uint)
-            */
-            bool add();
-
-            /*View will require:
-              - Account (uint)
-              - Since (date)
-              - To (date)
-            */
-            bool view();
-    };
+            dati();
+        };
+    }
 }
 
-#endif // IS_OPERATIONS_H
+#endif // DATI_H

@@ -18,10 +18,13 @@
 #ifndef IS_CONTABILITY_H
 #define IS_CONTABILITY_H
 
-class contability
+namespace is
 {
-    public:
-        contability();
-};
+    class contability
+    {
+        public:
+            contability();
+    };
+}
 
 #endif // IS_CONTABILITY_H

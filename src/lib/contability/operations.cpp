@@ -17,6 +17,14 @@
 
 #include "operations.h"
 
-operations::operations()
+#ifndef IS_OPERATIONS_CPP
+#define IS_OPERATIONS_CPP
+
+namespace is
 {
+    operations::operations()
+    {
+    }
 }
+
+#endif // IS_OPERATIONS_CPP

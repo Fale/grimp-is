@@ -17,6 +17,14 @@
 
 #include "contability.h"
 
-contability::contability()
+#ifndef IS_CONTABILITY_CPP
+#define IS_CONTABILITY_CPP
+
+namespace is
 {
+    contability::contability()
+    {
+    }
 }
+
+#endif // IS_CONTABILITY_CPP
