@@ -38,7 +38,7 @@
             - convertions (h only)
                 - toInt (inline, int)
                 - toString (inline, str)
-            - datetime (h and cpp)
+            - dati (h and cpp)
                 - dt (static, string)
                     - format (string)
             - password
