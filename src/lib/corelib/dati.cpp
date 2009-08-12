@@ -20,8 +20,19 @@
 
 #include "dati.h"
 
-dati::dati()
+namespace is
 {
-}
+    namespace corelib
+    {
+      
+        dati::dati()
+        {
+        }
+        
+        std::string dati::dt( std::string )
+        {
+        }
 
+    }
+}
 #endif // DATI_CPP

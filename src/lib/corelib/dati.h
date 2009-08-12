@@ -24,8 +24,9 @@ namespace is
     {
         class dati
         {
-        public:
-            dati();
+            public:
+                dati();
+                static std::string dt( std::string );
         };
     }
 }
