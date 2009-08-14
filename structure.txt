@@ -35,12 +35,12 @@
                     - Since (date)
                     - To (date)
         - corelib
-            - convertions (h only)
-                - toInt (inline, int)
-                - toString (inline, str)
-            - dati (h and cpp)
+OK          - convertions (h only)
+OK              - toInt (inline, int)
+OK              - toString (inline, str)
+OK          - dati (h and cpp)
                 - dt (static, string)
-                    - format (string)
+OK                  - format (string)
             - password
                 - md5 (str)
                     - string (str)
