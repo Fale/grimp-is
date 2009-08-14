@@ -22,11 +22,12 @@
     { - Credit (bool) }       |  ||
     { - Real (bool) }         |  ||
     { - Icon (string) }       |  ||
+    { - Max (int) }           |  ||
+                              |  ||
 - Account                     |  ||
     - ID (uint)<--------------+-|||
     - Name (string)           | |||
     - Type (uint)-------------| |||
-    { - Max (int) }             |||
                                 |||
 - Operations                    |||
     - ID (uint)                 |||
