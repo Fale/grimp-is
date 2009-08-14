@@ -1,1 +1,39 @@
- 
+- Users
+    - ID (uint)
+    - Username (string)
+    - Password (string)
+    { - Name (string) }
+    { - Surname (string) }
+    { - Email (string) }
+    { - Power (ushort) }
+    
+- Categories
+    - ID (uint)<------------------|
+    - Name (string)               |
+                                  |
+- People                          |
+    - ID (uint)<-----------------||
+    - Name (sring)               ||
+                                 ||
+- Account Type                   ||
+    - ID (uint)<--------------|  ||
+    - Name (string)           |  ||
+    { - Liquidity (bool) }    |  ||
+    { - Credit (bool) }       |  ||
+    { - Real (bool) }         |  ||
+    { - Icon (string) }       |  ||
+- Account                     |  ||
+    - ID (uint)<--------------+-|||
+    - Name (string)           | |||
+    - Type (uint)-------------| |||
+    { - Max (int) }             |||
+                                |||
+- Operations                    |||
+    - ID (uint)                 |||
+    - Dati (dateTime)           |||
+    { - Accounted (dateTime) }  |||
+    - Import (int)              |||
+    - Account (uint)------------|||
+    - Person (uint)--------------||
+    - Cause (string)              |
+    - Category (uint)-------------|
