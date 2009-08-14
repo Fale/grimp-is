@@ -15,8 +15,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef IS_CORELIB_CONVERT
-#define IS_CORELIB_CONVERT
+#ifndef IS_CORELIB_CONVERT_H
+#define IS_CORELIB_CONVERT_H
 
 #include <cstdlib>
 #include <sstream>

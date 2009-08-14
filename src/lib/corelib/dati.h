@@ -15,8 +15,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef DATI_H
-#define DATI_H
+#ifndef IS_CORELIB_DATI_H
+#define IS_CORELIB_DATI_H
 
 namespace is
 {

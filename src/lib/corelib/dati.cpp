@@ -15,8 +15,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef DATI_CPP
-#define DATI_CPP
+#ifndef IS_CORELIB_DATI_CPP
+#define IS_CORELIB_DATI_CPP
 
 #include "dati.h"
 
