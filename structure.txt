@@ -43,8 +43,8 @@
 |     |     |             - password                                    |
 |     |     |                 - md5 (str)                               |
 |     |     |                     - string (str)                        |
-|     |     |         - user                                            |
-|     |     |             - add (bool)                                  |
+| TBT |     |         - user                                            |
+| TBT |     |             - add (bool)                                  |
 |     |     |                 - name (str)                              |
 |     |     |                 - surname (str)                           |
 |     |     |                 - username (str)                          |
@@ -53,12 +53,13 @@
 |     |     |                 - password (str)                          |
 |     |     |             - edit                                        |
 |     |     |                 -                                         |
-|     |     |             - login (bool)                                |
+| TBT |     |             - login (bool)                                |
 |     |     |                 - username (str)                          |
 |     |     |                 - password (str)                          |
 |     |     |             - view (vector...)                            |
 |     |     |                 - ID (uint)                               |
 |     |     |             - viewList (vector...)                        |
+| TBT |     |             - logout                                      |
 |     |     |             - remove                                      |
 |     |     |         - client                                          |
 |     |     |             - add                                         |
