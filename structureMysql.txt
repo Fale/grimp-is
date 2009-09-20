@@ -6,7 +6,7 @@
     { - Surname (string) }
     { - Email (string) }
     { - Power (ushort) }
-    
+
 - Categories
     - ID (uint)<------------------|
     - Name (string)               |
