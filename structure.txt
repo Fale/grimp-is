@@ -1,79 +1,79 @@
--src
-    - lib
-        - contability
-            - account (h and cpp)
-                - type [virtual,cache,credit,debit]
-                - add (bool)
-                    - name (str)
-                    - max (uint)
-                    - type (type)
-                - list (vector...)
-                - changeName (bool)
-                    - ID (uint)
-                    - name (str)
-                - changeMax (bool)
-                    - ID (uint)
-                    - max (uint)
-                - changeType (bool)
-                    - ID (uint)
-                    - type (type)
-                - delete (bool)
-                    - ID (uint)
-            - contability (dummy class)
-            - operations (h and cpp)
-                - add (bool)
-                    - Account (uint)
-                    - Import (double)
-                    - User (uint)
-                    - To (uint)
-                    - Cause (str)
-                    - Category (uint)
-                - view (vector...)
-                    - ID (uint)
-                - list (vector...)
-                    - Account (uint)
-                    - Since (date)
-                    - To (date)
-        - corelib
-OK          - convertions (h only)
-OK              - toInt (inline, int)
-OK              - toString (inline, str)
-OK          - dati (h and cpp)
-                - dt (static, string)
-OK                  - format (string)
-            - password
-                - md5 (str)
-                    - string (str)
-        - user
-            - add (bool)
-                - name (str)
-                - surname (str)
-                - username (str)
-                - email (str)
-                - power (uint)
-                - password (str)
-            - edit
-                - 
-            - login (bool)
-                - username (str)
-                - password (str)
-            - view (vector...)
-                - ID (uint)
-            - viewList (vector...)
-            - remove
-        - client
-            - add
-                - name (str)
-                - piva (uint)
-            - view
-            - viewTransactions
-            - viewList
-            - remove
-        - fornitori (??)
-            - add
-                - name (str)
-                - piva (uint)
-            - view
-            - viewTransactions
-            - viewList
-            - remove
++-----+-----+-----------------------------------------------------------+
+| PHP | CPP | OBJECT                                                    |
++-----+-----+-----------------------------------------------------------+
+|     |     | -src                                                      |
+|     |     |     - lib                                                 |
+|     |     |         - contability                                     |
+|     |     |             - accounts (h and cpp)                        |
+| TBT |     |                 - type [virtual,cache,credit,debit]       |
+| TBT |     |                 - add (bool)                              |
+|     |     |                     - name (str)                          |
+|     |     |                     - type (type)                         |
+| NE  |     |                 - list (vector...)                        |
+| TBT |     |                 - changeName (bool)                       |
+|     |     |                     - ID (uint)                           |
+|     |     |                     - name (str)                          |
+| TBT |     |                 - changeType (bool)                       |
+|     |     |                     - ID (uint)                           |
+|     |     |                     - type (type)                         |
+| NE  |     |                 - delete (bool)                           |
+|     |     |                     - ID (uint)                           |
+|     |     |             - contability (dummy class)                   |
+|     |     |             - operations (h and cpp)                      |
+|     |     |                 - add (bool)                              |
+|     |     |                     - Account (uint)                      |
+|     |     |                     - Import (double)                     |
+|     |     |                     - User (uint)                         |
+|     |     |                     - To (uint)                           |
+|     |     |                     - Cause (str)                         |
+|     |     |                     - Category (uint)                     |
+|     |     |                 - view (vector...)                        |
+|     |     |                     - ID (uint)                           |
+|     |     |                 - list (vector...)                        |
+|     |     |                     - Account (uint)                      |
+|     |     |                     - Since (date)                        |
+|     |     |                     - To (date)                           |
+|     |     |         - corelib                                         |
+|     | OK  |             - convertions (h only)                        |
+|     | OK  |                 - toInt (inline, int)                     |
+|     | OK  |                 - toString (inline, str)                  |
+|     | OK  |             - dati (h and cpp)                            |
+|     |     |                 - dt (static, string)                     |
+|     | OK  |                     - format (string)                     |
+|     |     |             - password                                    |
+|     |     |                 - md5 (str)                               |
+|     |     |                     - string (str)                        |
+|     |     |         - user                                            |
+|     |     |             - add (bool)                                  |
+|     |     |                 - name (str)                              |
+|     |     |                 - surname (str)                           |
+|     |     |                 - username (str)                          |
+|     |     |                 - email (str)                             |
+|     |     |                 - power (uint)                            |
+|     |     |                 - password (str)                          |
+|     |     |             - edit                                        |
+|     |     |                 -                                         |
+|     |     |             - login (bool)                                |
+|     |     |                 - username (str)                          |
+|     |     |                 - password (str)                          |
+|     |     |             - view (vector...)                            |
+|     |     |                 - ID (uint)                               |
+|     |     |             - viewList (vector...)                        |
+|     |     |             - remove                                      |
+|     |     |         - client                                          |
+|     |     |             - add                                         |
+|     |     |                 - name (str)                              |
+|     |     |                 - piva (uint)                             |
+|     |     |             - view                                        |
+|     |     |             - viewTransactions                            |
+|     |     |             - viewList                                    |
+|     |     |             - remove                                      |
+|     |     |         - fornitori (??)                                  |
+|     |     |             - add                                         |
+|     |     |                 - name (str)                              |
+|     |     |                 - piva (uint)                             |
+|     |     |             - view                                        |
+|     |     |             - viewTransactions                            |
+|     |     |             - viewList                                    |
+|     |     |             - remove                                      |
++-----+-----+-----------------------------------------------------------+
