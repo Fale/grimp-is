@@ -2,7 +2,7 @@
 
 require "../config.php";
 
-class account
+class accounts
 {
     /* Types:
         - 0 = virtual
@@ -16,7 +16,7 @@ class account
     {
         $connession = mysql_connect( $db_host, $db_user ) or die( "Unable to open database" );
         mysql_select_db( $db_db ) or die( "Unable to access database" );
-        $query = "INSERT INTO account ( ID, name, type ) VALUES ( '', $name, $type );";
+        $query = "INSERT INTO accounts ( ID, name, type ) VALUES ( '', $name, $type );";
         $qresult = mysql_query( $query ) or die( mysql_error() );
         return ( $qresult );
     }
@@ -25,7 +25,7 @@ class account
     {
         $connession = mysql_connect( $db_host, $db_user ) or die( "Unable to open database" );
         mysql_select_db( $db_db ) or die( "Unable to access database" );
-        $query = "SELECT * FROM account";
+        $query = "SELECT * FROM accounts";
         $qresult = mysql_query( $query ) or die( mysql_error() );
         $blurb = mysql_fetch_array( $qresult ) or die( mysql_error() );
         print( "$blurb[0]" ); //To be checked
@@ -35,7 +35,7 @@ class account
     {
         $connession = mysql_connect( $db_host, $db_user ) or die( "Unable to open database" );
         mysql_select_db( $db_db ) or die( "Unable to access database" );
-        $query = "UPDATE account SET name=$newName WHERE ID=$id;";
+        $query = "UPDATE accounts SET name=$newName WHERE ID=$id;";
         $qresult = mysql_query( $query ) or die( mysql_error() );
         return ( $qresult );
     }
@@ -44,7 +44,7 @@ class account
     {
         $connession = mysql_connect( $db_host, $db_user ) or die( "Unable to open database" );
         mysql_select_db( $db_db ) or die( "Unable to access database" );
-        $query = "UPDATE account SET type=$newType WHERE ID=$id;";
+        $query = "UPDATE accounts SET type=$newType WHERE ID=$id;";
         $qresult = mysql_query( $query ) or die( mysql_error() );
         return ( $qresult );
     }
@@ -53,7 +53,7 @@ class account
     {
         $connession = mysql_connect( $db_host, $db_user ) or die( "Unable to open database" );
         mysql_select_db( $db_db ) or die( "Unable to access database" );
-        $query = "DELETE * FROM account WHERE ID=$id;";
+        $query = "DELETE * FROM accounts WHERE ID=$id;";
         $qresult = mysql_query( $query ) or die( mysql_error() );
         return ( $qresult );
     }
