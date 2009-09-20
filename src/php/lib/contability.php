@@ -1,14 +1,9 @@
 <?php
 
+/// Dummy class
+
 class contability
 {
-    login( $user, $pass )
-    {
-    }
-
-    logout()
-    {
-    }
 }
 
 ?>
