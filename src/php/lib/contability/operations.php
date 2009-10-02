@@ -32,7 +32,13 @@ class operations
     }
 
     function listAll( $account, $since, $to )
-    {}
+    {
+        $connession = mysql_connect( $db_host, $db_user ) or die( "Unable to open database" );
+        mysql_select_db( $db_db ) or die( "Unable to access database" );
+        $query = "SELECT * FROM operations WHERE account=$account AND dati<=$since AND dati >=$to;";
+        $qresult = mysql_query( $query ) or die( mysql_error() );
+        return ( $qresult );
+    }
 }
 
 ?>
