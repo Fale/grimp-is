@@ -28,7 +28,7 @@ class accounts
         $query = "SELECT * FROM accounts WHERE ID=$id;";
         $qresult = mysql_query( $query ) or die( mysql_error() );
         $blurb = mysql_fetch_array( $qresult ) or die( mysql_error() );
-        return $blurb;
+        return ( $blurb );
     }
 
     function listAll()
@@ -38,7 +38,7 @@ class accounts
         $query = "SELECT * FROM accounts;";
         $qresult = mysql_query( $query ) or die( mysql_error() );
         $blurb = mysql_fetch_array( $qresult ) or die( mysql_error() );
-        return $blurb;
+        return ( $blurb );
     }
 
     function changeName( $id, $newName )
