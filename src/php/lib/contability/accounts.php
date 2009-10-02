@@ -21,6 +21,16 @@ class accounts
         return ( $qresult );
     }
 
+    function view( $id )
+    {
+        $connession = mysql_connect( $db_host, $db_user ) or die( "Unable to open database" );
+        mysql_select_db( $db_db ) or die( "Unable to access database" );
+        $query = "SELECT * FROM accounts WHERE ID=$id";
+        $qresult = mysql_query( $query ) or die( mysql_error() );
+        $blurb = mysql_fetch_array( $qresult ) or die( mysql_error() );
+        return $blurb;
+    }
+
 /*    function list()
     {
         $connession = mysql_connect( $db_host, $db_user ) or die( "Unable to open database" );
