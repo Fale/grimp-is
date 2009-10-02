@@ -1,6 +1,6 @@
 <?php
 
-require "../dati.h";
+require "../dati.php";
 
 class operations
 {
